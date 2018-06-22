@@ -179,7 +179,7 @@ ol
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
-	min-height: 40x;
+	min-height: 40px;
 	line-height: 200%;
 	display:inline-block;
 }
@@ -260,7 +260,7 @@ ol > li> ul> li:hover > a
 #imgPageDescription
 {
 	width: 320px;
-	heighr: 213px;
+	height: 213px;
 	margin-left:auto;
 	margin-right:auto;
 	border: 2px dotted #347B98;
@@ -398,11 +398,8 @@ td, th
     background-color: #B2D732;
 }
 
-#graphAnalysis
+#piechart
 {
-	width: 480px;
-	height: 327px;
-	background-color: white;
 	margin-bottom: 20px;
 }
 
@@ -467,7 +464,8 @@ td, th
 textarea
 {
 	border: 1px solid #092834;
-	font-size: 18px;
+	font-size: 15px;
+	margin-top:10px;
 }
 
 

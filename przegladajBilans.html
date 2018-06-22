@@ -5,11 +5,14 @@
 	<title>Przeglądaj bilans</title>
 	<meta name="description" content="Przeglądaj bilans -  prowadzenie budżetu osbostego." />
 	<meta name="keywords" content="budżet, osobisty, domowy" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
 		
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet"/>
+	
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="pieChart.js"></script>
 	
 </head>
 
@@ -19,7 +22,7 @@
 	
 		<header>
 			<h1 class="title"><span style="color: #091A2D"><i class="icon-money"></i></span>
-			Aplikacja do prowadzenia budżetu domowego!<h1>
+			Aplikacja do prowadzenia budżetu domowego!</h1>
 		</header>	
 		
 			<nav class="topnav">
@@ -105,20 +108,20 @@
 						<div style="clear:both"></div>
 					</article>	
 					<article>
-						<div id="graphAnalysis">
-							<img src="img/wykres.png"/>
+						<div id="piechart">
 						</div>
-						
+
 						<div id="analysisOfExpenses">
 							<table><tr><td class="cellTitle">Suma przychodów:</td><td class="cellResult">2000 zł</td></tr></table>	
-							<table><tr><td class="cellTitle">Suma wydatków:</td><td class="cellResult">586.56 zł</td></tr></tabl		
+							<table><tr><td class="cellTitle">Suma wydatków:</td><td class="cellResult">586.56 zł</td></tr></table>		
 							<table>
 								<tr>
 									<td class="cellTitle">Różnica:</td>
-									<td class="cellResult" style="background-color:#66B032">1425.56 zł</td>
+									<td id="difference" class="cellResult" style="background-color:#66B032">1425</td>
 								</tr>
 							</table>
-							Napis: Uważaj, wpadasz w długi! lub Gratulacje.Świetnie zarządzasz finasami!
+							<p id="text"></p>
+							<script src="functionDisplayText.js"></script>
 						</div>
 					</article>
 				</div>
